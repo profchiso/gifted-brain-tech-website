@@ -1,0 +1,60 @@
+body{
+    font-family: "Montserrat";
+
+}
+nav{
+    background-color: #ff4c68 !important;
+    color: bisque;
+}
+.container-fluid{
+    padding: 5% 15%;
+    
+}
+.section-heading{
+    text-align: center;
+}
+.not-colored{
+    background-color: #ff4c68;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+i{
+    padding-right: 1rem;
+}
+#partners i{
+    padding-right: 7%;
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+a i:hover{
+    color: white;
+}
+.navbar-brand,li a{
+    font-size: 1rem;
+    font-weight: bolder !important;
+    line-height: 2;
+    color: white !important;
+}
+li a:active{
+    color:rgb(76, 0, 255)!important;
+    border-bottom: green !important;
+}
+li a:hover{
+    color: green !important;
+    border-bottom: green !important;
+}
+
+.signup{
+    padding: 0 30%;
+    
+}
+.dropdown-item{
+    color: black !important;
+}
+.dropdown{
+    border: 0px !important;
+}
