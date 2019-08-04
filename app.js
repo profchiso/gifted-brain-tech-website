@@ -31,7 +31,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://test:test@cluster0-t9vby.mongodb.net/students",{useNewUrlParser: true}); //connecting to local mongodb server
+mongoose.connect("mongodb+srv://test:test@cluster0-t9vby.mongodb.net/students",{useNewUrlParser: true}); //connecting to  mongodb server
 mongoose.set('useCreateIndex',true);
 
 const userSchema = new mongoose.Schema({
@@ -74,8 +74,8 @@ app.get('/student',(req,res)=>{
 app.get('/success',(req,res)=>{
     
             if(req.isAuthenticated()){
-                let fullname=found.fullname;
-                res.render('success',{fullname: fullname});
+               // let fullname=found.fullname;
+                res.render('success');
     
             }else{
                 res.redirect('/login');
@@ -109,7 +109,7 @@ app.get('/success',(req,res)=>{
           let fullname= user.fullname;
             //res.render('success',{fullname: fullname});
             
-            res.render('success',{fullname:fullname});
+            res.redirect('/success');
         }
       });
 
@@ -117,8 +117,8 @@ app.get('/success',(req,res)=>{
 
     const port= process.env.PORT || 3000;
 
-app.listen(port,()=>{
-    console.log('server running on '+ port);
+app.listen(3000,()=>{
+    console.log('server running on ');
 
 });
 
